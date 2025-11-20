@@ -86,26 +86,6 @@ This project emerged from coursework in Ethics in Technology, specifically from 
 - Identify interventions engineers can implement
 - Think critically about technology's societal effects
 
-## Customization
-
-### Adding New Demos
-
-1. Create a new component in `src/components/`
-2. Import and add to `App.tsx`
-3. Add navigation entry in the sections array
-4. Follow the existing pattern: demo → explanation → solutions
-
-### Changing the Theme
-
-Edit CSS variables in `src/index.css`:
-
-```css
-:root {
-  --bg-primary: #0a0a0a;
-  --accent-blue: #0a84ff;
-  /* ... other variables */
-}
-```
 
 ## Performance
 
