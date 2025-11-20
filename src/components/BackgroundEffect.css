@@ -1,0 +1,106 @@
+.background-effect {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.particle {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.1;
+  animation: float 20s infinite ease-in-out;
+  will-change: transform, opacity;
+}
+
+/* Individual particle styles */
+.particle-1 {
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(circle, var(--accent-blue), transparent);
+  top: 10%;
+  left: 5%;
+  animation-delay: 0s;
+  animation-duration: 25s;
+}
+
+.particle-2 {
+  width: 200px;
+  height: 200px;
+  background: radial-gradient(circle, var(--accent-purple), transparent);
+  top: 60%;
+  right: 10%;
+  animation-delay: -5s;
+  animation-duration: 30s;
+}
+
+.particle-3 {
+  width: 250px;
+  height: 250px;
+  background: radial-gradient(circle, var(--accent-pink), transparent);
+  bottom: 15%;
+  left: 15%;
+  animation-delay: -10s;
+  animation-duration: 28s;
+}
+
+.particle-4 {
+  width: 180px;
+  height: 180px;
+  background: radial-gradient(circle, var(--accent-green), transparent);
+  top: 40%;
+  right: 25%;
+  animation-delay: -15s;
+  animation-duration: 22s;
+}
+
+.particle-5 {
+  width: 220px;
+  height: 220px;
+  background: radial-gradient(circle, var(--accent-orange), transparent);
+  top: 70%;
+  left: 50%;
+  animation-delay: -8s;
+  animation-duration: 26s;
+}
+
+.particle-6 {
+  width: 280px;
+  height: 280px;
+  background: radial-gradient(circle, var(--accent-blue), transparent);
+  top: 25%;
+  left: 70%;
+  animation-delay: -12s;
+  animation-duration: 32s;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translate(0, 0) scale(1);
+    opacity: 0.05;
+  }
+  25% {
+    transform: translate(30px, -30px) scale(1.1);
+    opacity: 0.08;
+  }
+  50% {
+    transform: translate(-20px, 20px) scale(0.9);
+    opacity: 0.1;
+  }
+  75% {
+    transform: translate(40px, 10px) scale(1.05);
+    opacity: 0.06;
+  }
+}
+
+/* Reduce motion for accessibility */
+@media (prefers-reduced-motion: reduce) {
+  .particle {
+    animation: none;
+    opacity: 0.03;
+  }
+}
