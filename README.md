@@ -76,7 +76,10 @@ The project uses CSS variables for a consistent dark theme:
 
 ## Educational Context
 
-This project emerged from coursework in Ethics in Technology, specifically from challenges understanding how datasets become skewed and how bias manifests in AI systems. By turning confusing terminology into interactive visualizations, these abstract concepts became concrete and understandable.
+This project emerged from coursework in Ethics in Technology, specifically from challenges 
+understanding how datasets become skewed and how bias manifests in AI systems. By turning 
+confusing terminology into interactive visualizations, these abstract concepts became concrete 
+and understandable.
 
 ### Learning Objectives
 
