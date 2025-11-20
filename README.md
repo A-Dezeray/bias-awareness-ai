@@ -85,7 +85,7 @@ This project emerged from coursework in Ethics in Technology, specifically from 
 - Learn frameworks for ethical decision-making
 - Identify interventions engineers can implement
 - Think critically about technology's societal effects
-
+```
 
 ## Performance
 
